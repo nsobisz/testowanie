@@ -41,10 +41,8 @@ def no_lib(request):
 
 
 
-
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-
+    path('sentry-debug/', no_return),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
