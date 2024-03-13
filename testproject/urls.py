@@ -19,7 +19,32 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 
+"""
+def division_by_zero(request):
+   division_by_zero = 1 / 0
+   
+def not_supported(request):
+    wrong_type = "sf" / "sf"
+
+def non_exist_variable(request):
+    print(x)
+
+def no_return(request):
+    print("hi")
+
+def no_8_table(request):
+    tab = [1,2,3]
+    return tab[8]
+
+def no_lib(request):
+    import dupa
+
+
+
+"""
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('sentry-debug/',),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
