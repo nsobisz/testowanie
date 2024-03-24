@@ -41,3 +41,7 @@ python manage.py runserver
 python3 manage.py runserver
 ```
 
+5. Instalowanie zależności
+```sh
+pip install -r  requirements.txt
+```
