@@ -1,3 +1,10 @@
 from django.shortcuts import render
+from django.views.generic.detail import DetailView
 
-# Create your views here.
+from .models import Book
+
+
+class BookDetailView(DetailView):
+    model = Book
+    template_name = "testapp/book_detail.html"
+    context_object_name = "book"
